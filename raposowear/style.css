@@ -229,3 +229,66 @@ footer {
         z-index: 102;
     }
 }
+
+.nota-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.nota-container .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.nota-container .logo {
+    width: 200px;
+    height: auto;
+    font-weight: bold;
+    text-align: center;
+    background: #ffea00;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.nota-container .header-text {
+    text-align: right;
+    font-size: 14px;
+}
+
+.nota-container .info-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.nota-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nota-container th, .nota-container td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+.nota-container input[type="text"],
+.nota-container input[type="number"],
+.nota-container input[type="date"] {
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+.nota-container .total-box {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
