@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
    
 });
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script>
+
+
 document.addEventListener("DOMContentLoaded", () => {
     let hoje = new Date().toISOString().split('T')[0];
     document.getElementById("data").value = hoje;
@@ -65,4 +65,4 @@ function gerarImagem() {
         link.click();
     });
 }
-</script>
+
