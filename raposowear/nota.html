@@ -21,82 +21,41 @@
     flex-direction: column; 
     align-items: center; 
 }
-
-.header { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    width: 100%; 
-    margin-bottom: 10px; 
+.nota-container .header-text {
+    text-align: right;
+    font-size: 14px;
 }
 
-.logo { 
-    background: #8C7156; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    font-weight: bold; 
-    font-size: 20px; 
+.nota-container .info-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.nota-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.nota-container th, .nota-container td {
+    border: 1px solid black;
+    padding: 5px;
     text-align: center;
 }
 
-.header-text { 
-    text-align: center; 
-    font-weight: bold; 
+.nota-container input[type="text"],
+.nota-container input[type="number"],
+.nota-container input[type="date"] {
+    width: 100%;
+    border: none;
+    text-align: center;
 }
 
-.info-line { 
-    display: flex; 
-    justify-content: space-between; 
-    width: 100%; 
-    margin-bottom: 10px; 
-    font-size: 25px;
-}
-
-table { 
-    width: 100%; 
-    border-collapse: collapse; 
-}
-
-th, td { 
-    border: 1px solid black; 
-    padding: 5px; 
-    text-align: center; 
-}
-
-th:nth-child(1), td:nth-child(1) { 
-    width: 10%; /* Quantidade menor */
-}
-
-th:nth-child(2), td:nth-child(2) { 
-    width: 65%; /* Descrição maior */
-}
-
-th:nth-child(3), td:nth-child(3) { 
-    width: 10%; /* Unitário menor */
-}
-
-th:nth-child(4), td:nth-child(4) { 
-    width: 15%; /* Total */
-}
-
-input { 
-    width: 100%; 
-    border: none; 
-    font-size: 14px;
-    text-align: center; 
-}
-
-.total-box { 
-    text-align: center; 
-    margin-top: 10px; 
-    font-size: 20px; 
-    font-weight: bold; 
-}
-
-#data { 
-    font-size: 20px; 
-    padding: 5px; 
+.nota-container .total-box {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 
@@ -107,7 +66,6 @@ input {
 <div class="container" id="capture">
     <div class="header">
         <div class="logo">Raposo Wear<br>Tel.: (22) 98827-4249</div>
-    </div>
         <div class="header-text">
             <p>Rua Bernardo Vasconcelos 293 - sala 4A - Centro</p>
             <p>Araruama - RJ</p>
