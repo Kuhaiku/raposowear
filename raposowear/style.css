@@ -7,7 +7,7 @@ html, body {
     font-family: 'Arial', sans-serif;
     background-color: #FAF3E0;
     color: #4A3F35;
-    text-align: center; /* Alinha todo o texto à esquerda por padrão */
+    text-align: center;
 }
 
 body {
@@ -53,10 +53,11 @@ nav ul li a {
     width: 80%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align section content to the left */
 }
 
-#servicos {
-    display: block;
+#blog {
+    display: block; /* Ensure the blog section is visible by default */
     background: #f9f9f9;
     padding: 40px;
     margin-top: 20px;
@@ -64,41 +65,53 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#servicos h2 {
+#blog h2 {
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #4A3F35;
-    text-align: center; /* Centraliza o título da seção */
+    text-align: center;
 }
 
-#servicos .servico-item {
+.blog-post-item {
     background: #fff;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
 }
 
-#servicos .servico-item h3 {
+.blog-post-item h3 {
     font-size: 24px;
     color: #8C7156;
     margin-bottom: 10px;
 }
 
-#servicos .servico-item p {
-    font-size: 16px;
-    color: #4A3F35;
-    margin-bottom: 10px;
-    flex: 1;
+.blog-post-item .post-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
 }
 
-#servicos .preco {
-    font-size: 18px;
-    font-weight: bold;
-    color: #8C7156;
-    text-align: right;
+.blog-post-item p {
+    font-size: 16px;
+    color: #4A3F35;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.blog-post-item .read-more {
+    display: inline-block;
+    background-color: #8C7156;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-post-item .read-more:hover {
+    background-color: #6C5540;
 }
 
 .menu-toggle {
@@ -133,39 +146,12 @@ nav ul li a {
     transform: scale(1.05);
 }
 
-/* Removendo a parte de construção */
-.construction-banner {
-    background-color: #f2c94c;
-    color: #000000;
-    text-align: center; /* Alinha o texto à esquerda */
-    padding: 40px;
-    position: relative;
-}
-
-.construction-message h2 {
-    font-size: 36px;
-    margin: 0;
-    font-weight: bold;
-}
-
-.construction-message p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.construction-banner::before {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100px;
-}
-
 footer {
-    text-align: center  ; /* Alinha o texto do footer à esquerda */
+    text-align: center;
     padding: 10px;
     background-color: #8C7156;
     color: white;
+    margin-top: auto; /* Pushes the footer to the bottom */
 }
 
 /* Media queries */
@@ -201,7 +187,7 @@ footer {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         display: none;
         flex-direction: column;
-        text-align: right; /* Alinha o menu à esquerda */
+        text-align: right;
         padding: 10px 0;
         z-index: 100;
     }
@@ -228,30 +214,26 @@ footer {
         height: 50px;
         z-index: 102;
     }
-}
 
-.nota-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    border: 2px solid black;
-    background-color: #fff;
-    font-size: 16px;
-}
+    .secao {
+        width: 95%; /* Adjust width for smaller screens */
+        padding: 20px 10px;
+    }
 
-.nota-container .header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-}
+    .blog-post-item {
+        padding: 15px;
+    }
 
-.nota-container .logo {
-    width: 200px;
-    height: auto;
-    font-weight: bold;
-    text-align: center;
-    background: #ffea00;
-    padding: 10px;
-    border-radius: 10px;
-}
+    .blog-post-item h3 {
+        font-size: 20px;
+    }
 
+    .blog-post-item p {
+        font-size: 14px;
+    }
+
+    .botao-whatsapp {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
